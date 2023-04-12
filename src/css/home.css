@@ -1,0 +1,87 @@
+.home-1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+    height: 80vh;
+}
+
+.left-view {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100%;
+    list-style-type: none;
+}
+
+.right-view {
+    /* border: 2px solid black; */
+
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    row-gap: 10px;
+}
+
+.dev1 {
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.dev1 li {
+    margin-left: 10px;
+}
+
+.dev2 {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.dev2 li {
+    list-style-type: none;
+}
+
+.trending,
+.bestseller,
+.old {
+    height: 22%;
+}
+
+@media (max-width:700px) {
+    .home-1 {
+        display: block;
+    }
+
+    .left-view {
+        display: none;
+    }
+
+    .right-view {
+        width: 100%;
+    }
+}
+
+
+
+.form-outline {
+    background-color: #efe9ef;
+    border-radius: 5px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
